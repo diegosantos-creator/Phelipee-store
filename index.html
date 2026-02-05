@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Phelipe Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🔥 Phelipe Store</div>
+</header>
+
+<section class="banner">
+  <h1>Loja Free Fire</h1>
+  <p>Diamantes, contas e itens com entrega rápida</p>
+</section>
+
+<section class="produtos">
+  <h2>Produtos em destaque</h2>
+
+  <div class="cards">
+
+    <!-- PRODUTO 1 -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2021/08/18/19/05/game-6553742_1280.jpg" alt="Free Fire">
+      <h3>xit android </h3>
+      <p>xit 100% hs perfeito para aumentar taxa de hs</p>
+      <span>R$ 9,90</span>
+      <button onclick="finalizarCompra('xit android', 'R$ 9,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2022/01/18/18/04/game-6946885_1280.jpg" alt="Free Fire">
+      <h3>Xit full hs ios</h3>
+      <p>100% hs perfeito para aumentar taxa de hs</p>
+      <span>R$ 11,90</span>
+      <button onclick="finalizarCompra('Xit ios', 'R$ 11,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2021/11/20/17/22/controller-6815276_1280.jpg" alt="Free Fire">
+      <h3>Xit disfaçavel</h3>
+      <p>android e ios</p>
+      <span>R$ 15,90</span>
+      <button onclick="finalizarCompra('Xit desfarçavel', 'R$ 15,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 - Phelipe Store</p>
+</footer>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+  // 🔴 EDITE AQUI SEU NÚMERO (com DDI +55)
+  const numeroWhatsApp = "+55 35 8479-4806";
+
+  function finalizarCompra(produto, preco) {
+    const mensagem = `Olá! Quero finalizar a compra:\n\n🛒 Produto: ${produto}\n💰 Preço: ${preco}`;
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+</html>

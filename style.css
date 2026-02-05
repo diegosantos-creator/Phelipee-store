@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+}
+
+header.header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+header .logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+header .busca input {
+  padding: 6px;
+  width: 200px;
+  border: none;
+}
+
+header .busca button {
+  padding: 6px 10px;
+  border: none;
+  background: #555;
+  color: #fff;
+}
+
+header .acoes a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.produtos {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.produtos h2 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 30px;
+}
