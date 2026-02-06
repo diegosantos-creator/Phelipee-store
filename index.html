@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Phelipe Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🔥 Phelipe Store</div>
+</header>
+
+<section class="banner">
+  <h1>Loja Free Fire</h1>
+  <p>Produtos digitais com entrega rápida</p>
+</section>
+
+<section class="produtos">
+  <h2>Produtos em destaque</h2>
+
+  <div class="cards">
+
+    <!-- PRODUTO 1 -->
+    <div class="card">
+      <!-- COLOQUE A IMAGEM AQUI DEPOIS -->
+      <img src="imagens/produto1.jpg" alt="Produto Free Fire">
+      <h3>xit 100% hs android</h3>
+      <span>R$ 9,90</span>
+      <button onclick="finalizarCompra('Quero adquirir o xit 100% hs para android', 'R$ 9,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="card">
+      <!-- COLOQUE A IMAGEM AQUI DEPOIS -->
+      <img src="imagens/produto2.jpg" alt="Produto Free Fire">
+      <h3>xit 100% hs ios</h3>
+      <span>R$ 10,90</span>
+      <button onclick="finalizarCompra('Quero adquirir o xit 100% hs ios', 'R$ 10,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="card">
+      <!-- COLOQUE A IMAGEM AQUI DEPOIS -->
+      <img src="imagens/produto3.jpg" alt="Produto Free Fire">
+      <h3>Hs disfarçavel</h3>
+      <span>R$ 14,90</span>
+      <button onclick="finalizarCompra('Quero adquirir o Hs disfarçavel', 'R$ 14,90')">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 - Phelipe Store</p>
+</footer>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+  // 🔴 EDITE APENAS ESSE NÚMERO
+  const numeroWhatsApp = "+553584794806"; // 55 + DDD + número
+
+  function finalizarCompra(produto, preco) {
+    const mensagem =
+      `Olá! Quero finalizar a compra:\n\n` +
+      `🛒 Produto: ${produto}\n` +
+      `💰 Preço: ${preco}`;
+
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+</html>
