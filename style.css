@@ -6,12 +6,12 @@
 }
 
 body {
-  background: #f2f2f2;
-  color: #333;
+  background: #121212;
+  color: ; #ffffff;
 }
 
 header.header {
-  background: #222;
+  background: #b30000;
   color: #fff;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ header .acoes a {
 }
 
 .banner {
-  background: #444;
+  background: #b30000;
   color: #fff;
   text-align: center;
   padding: 40px 20px;
@@ -87,7 +87,7 @@ header .acoes a {
 }
 
 .card button {
-  background: #222;
+  background: #25d366;
   color: #fff;
   border: none;
   padding: 8px;
@@ -96,7 +96,7 @@ header .acoes a {
 }
 
 .footer {
-  background: #222;
+  background: #000000;
   color: #fff;
   text-align: center;
   padding: 12px 0;
